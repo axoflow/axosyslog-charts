@@ -1,9 +1,13 @@
+# kind -- DaemonSet or Deployment
+kind: DaemonSet
+
+# replicaCount -- Only applicable if kind=Deployment
 replicaCount: 1
 
 image:
   repository: ghcr.io/axoflow/syslog-ng
   pullPolicy: IfNotPresent
-  tag: "4.1.1"
+  tag: "4.1.1"  
 
 imagePullSecrets: []
 nameOverride: ""
@@ -65,8 +69,19 @@ autoscaling:
   targetCPUUtilizationPercentage: 80
   targetMemoryUtilizationPercentage: 80
 
+labels: {}
+
+annotations: {}
+
 nodeSelector: {}
 
 tolerations: []
 
 affinity: {}
+
+podLabels: {}
+
+updateStrategy: {}
+#   type: RollingUpdate
+#   rollingUpdate:
+#     maxUnavailable: 1
