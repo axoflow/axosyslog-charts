@@ -6,6 +6,10 @@
   </picture>
 </p>
 
+## Archived
+
+*This repo moved to https://github.com/axoflow/axosyslog. Please use the helm charts provided there.*
+
 # AxoSyslog Helm Charts - a cloud-native distribution of syslog-ng by Axoflow
 
 This repository contains various [Helm charts](https://helm.sh/docs/topics/charts/) for syslog-ng. You can use these charts to install the [AxoSyslog - cloud-ready syslog-ng images](https://github.com/axoflow/axosyslog-docker) created and maintained by [Axoflow](https://axoflow.com).
